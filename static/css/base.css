@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/pokemon-xmas-banner.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #DA4167;
+    font-family: 'Nunito', 'sans-serif';
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    border: 2px solid #DA4167;
+    border-radius: 4px;
+    padding: 0.4rem;
+    color: #DA4167;
+    box-shadow: 2px 2px 0px;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    color: black;
+    background: white;
+    min-width: 260px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.btn-red {
+    background: #DA4167;
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #DA4167;
+    color: white;
+}
+
+.border-color {
+    border: 2px solid #DA4167;
+}
+
+/* -------------------------------- Media Queries */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+} 
