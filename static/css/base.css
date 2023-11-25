@@ -6,7 +6,7 @@ body {
     background: url('/media/pokemon-xmas-banner.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #DA4167;
+    color: #003049;
     font-family: 'Nunito', 'sans-serif';
 }
 
@@ -19,11 +19,7 @@ body {
 }
 
 .logo-font {
-    border: 2px solid #DA4167;
-    border-radius: 4px;
-    padding: 0.4rem;
-    color: #DA4167;
-    box-shadow: 2px 2px 0px;
+    border-bottom: 4px solid #C1121F;
 }
 
 .main-logo-link {
@@ -31,31 +27,62 @@ body {
 }
 
 .shop-now-button {
-    color: black;
-    background: white;
+    color: #fff;
+    background: #003049;
     min-width: 260px;
-    border: 2px solid white;
-    border-radius: 4px;
+    border: 2px solid #003049;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #000;
 }
 
 .btn-red {
-    background: #DA4167;
-    color: white;
+    background: #C1121F;
+    color: #fff;
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
+    background: #003049;
+    color: #fff;
+    border-color: #003049;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #DA4167;
-    color: white;
+.shop-now-button:focus {
+    color: #003049;
+    background: #fff;
+    border-color: #fff;
 }
 
 .border-color {
-    border: 2px solid #DA4167;
+    border: 2px solid #C1121F;
+    border-radius: 15px;
 }
+
+::placeholder,
+.main-color {
+    color: #003049 !important;
+}
+
+.banner-text {
+    background: #C1121F;
+    padding: 1rem;
+    border: 2px solid #C1121F;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #000;
+    color: #fff;
+}
+
+.dropdown-menu {
+    min-width: 1rem !important;
+}
+
+.icon-color {
+    color: #C1121F !important;
+}
+
 
 /* -------------------------------- Media Queries */
 
@@ -78,3 +105,27 @@ body {
         padding-top: 164px;
     }
 } 
+
+@media (min-width: 320px) and (max-width: 426px) {
+    .banner-text {
+        font-size: 1.5rem;
+    }
+
+    .fixed-top {
+        position: static;
+    }
+
+    .shop-now-button {
+        font-size: 1rem;
+        min-width: 125px;
+    }
+
+    .navbar {
+        padding: 0.5rem 1.3rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0.5rem;
+    }
+
+}
