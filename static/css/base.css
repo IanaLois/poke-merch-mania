@@ -10,13 +10,12 @@ body {
     font-family: 'Nunito', 'sans-serif';
 }
 
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+::placeholder,
+.main-color {
+    color: #003049 !important;
 }
+
+/* -------------------------------- Main Logo */
 
 .logo-font {
     border-bottom: 4px solid #C1121F;
@@ -26,13 +25,14 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    color: #003049;
-    background: #fff;
-    min-width: 260px;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    box-shadow: 3px 3px 3px #000;
+/* -------------------------------- Searchbar */
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .btn-red {
@@ -48,23 +48,22 @@ body {
     border-color: #003049;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus {
-    color: #fff;
-    background: #C1121F;
-    border-color: #C1121F;
-}
-
 .border-color {
     border: 2px solid #C1121F;
     border-radius: 15px;
 }
 
-::placeholder,
-.main-color {
-    color: #003049 !important;
+/* -------------------------------- Account Dropdown Menu */
+
+.dropdown-menu {
+    min-width: 1rem !important;
 }
+
+li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
+    left: -26px;
+}
+
+/* -------------------------------- Main Banner Message */
 
 .banner-text {
     background: #003049;
@@ -75,17 +74,51 @@ body {
     color: #fff;
 }
 
-.dropdown-menu {
-    min-width: 1rem !important;
+/* -------------------------------- Main Shop Now Button */
+
+.shop-now-button {
+    color: #003049;
+    background: #fff;
+    min-width: 260px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #000;
 }
 
-.icon-color {
-    color: #C1121F !important;
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    color: #fff;
+    background: #C1121F;
+    border-color: #C1121F;
 }
+
+/* -------------------------------- Free Delivery Banner */
 
 .delivery-text {
     background: #C1121F;
     color: #fff;
+}
+
+/* -------------------------------- Products Page */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.products-main {
+    background: #003049;
+    padding: 2.5rem;
+    border: 2px solid #003049;
+    box-shadow: 0px 3px 3px #000;
+    color: #fff;
+    margin-top: -0.5rem;
 }
 
 /* -------------------------------- Media Queries */
@@ -110,9 +143,25 @@ body {
     }
 } 
 
-@media (min-width: 426px) and (max-width: 981px) {
+@media (min-width: 509px) and (max-width: 593px) {
+    li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
+        left: -109px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 991.5px) {
     .col-md-6 {
         margin-top: 14rem !important;
+    }
+
+    .products-main {
+        margin-top: 6.5rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 591px) {
+    .products-main {
+        margin-top: 8.5rem;
     }
 }
 
@@ -138,4 +187,7 @@ body {
         padding: 0.5rem 0.5rem;
     }
 
+    li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
+        left: -70px;
+    }
 }
