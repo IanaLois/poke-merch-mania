@@ -17,10 +17,10 @@
                 Toys <i class="fas fa-lg main-color fa-solid fa-cube"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="toys-link">
-                <a href="" class="dropdown-item main-color">Plushies</a>
-                <a href="" class="dropdown-item main-color">Figures</a>
-                <a href="" class="dropdown-item main-color">Card Game</a>
-                <a href="" class="dropdown-item main-color">All Toys</a>
+                <a href="{% url 'products' %}?category=plushies" class="dropdown-item main-color">Plushies</a>
+                <a href="{% url 'products' %}?category=figures" class="dropdown-item main-color">Figures</a>
+                <a href="{% url 'products' %}?category=card_game" class="dropdown-item main-color">Card Game</a>
+                <a href="{% url 'products' %}?category=plushies,figures,card_game" class="dropdown-item main-color">All Toys</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -28,10 +28,10 @@
                 Clothing <i class="fas fa-lg main-color fa-solid fa-shirt"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item main-color">T-Shirts</a>
-                <a href="" class="dropdown-item main-color">Sweaters</a>
-                <a href="" class="dropdown-item main-color">Pyjamas</a>
-                <a href="" class="dropdown-item main-color">All Clothing</a>
+                <a href="{% url 'products' %}?category=tshirts" class="dropdown-item main-color">T-Shirts</a>
+                <a href="{% url 'products' %}?category=sweaters" class="dropdown-item main-color">Sweaters</a>
+                <a href="{% url 'products' %}?category=pyjamas" class="dropdown-item main-color">Pyjamas</a>
+                <a href="{% url 'products' %}?category=tshirts,sweaters,pyjamas" class="dropdown-item main-color">All Clothing</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -39,10 +39,10 @@
                 Accessories <i class="fas fa-lg main-color fa-solid fa-socks"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item main-color">Socks</a>
-                <a href="" class="dropdown-item main-color">Hats</a>
-                <a href="" class="dropdown-item main-color">Keychains</a>
-                <a href="" class="dropdown-item main-color">All Accessories</a>
+                <a href="{% url 'products' %}?category=socks" class="dropdown-item main-color">Socks</a>
+                <a href="{% url 'products' %}?category=hats" class="dropdown-item main-color">Hats</a>
+                <a href="{% url 'products' %}?category=keychains" class="dropdown-item main-color">Keychains</a>
+                <a href="{% url 'products' %}?category=socks,hats,keychains" class="dropdown-item main-color">All Accessories</a>
             </div>
         </li>
     </ul>
