@@ -10,9 +10,32 @@ body {
     font-family: 'Nunito', 'sans-serif';
 }
 
+/* -------------------------------- Main Font Color */
+
 ::placeholder,
 .main-color {
     color: #003049 !important;
+}
+
+/* -------------------------------- Secondary Font Color */
+
+.btn-red,
+.delivery-text {
+    background: #C1121F;
+    color: #fff;
+}
+
+/* -------------------------------- Main Hover Effect */
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus,
+.card:hover,
+.card:active,
+.card:focus {
+    background: #003049;
+    color: #fff;
+    border-color: #003049;
 }
 
 /* -------------------------------- Main Logo */
@@ -33,19 +56,6 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.btn-red {
-    background: #C1121F;
-    color: #fff;
-}
-
-.btn-red:hover,
-.btn-red:active,
-.btn-red:focus {
-    background: #003049;
-    color: #fff;
-    border-color: #003049;
 }
 
 .border-color {
@@ -93,13 +103,6 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     border-color: #C1121F;
 }
 
-/* -------------------------------- Free Delivery Banner */
-
-.delivery-text {
-    background: #C1121F;
-    color: #fff;
-}
-
 /* -------------------------------- Products Page */
 
 .overlay {
@@ -123,10 +126,14 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 
 /* -------------------------------- Media Queries */
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+@media (min-width: 1024px) {
+    .container {
+        max-width: 80%;
+    }
+    
+    .col-7.col-md-6 {
+        margin-top: 5rem;
+    }   
 }
 
 @media (min-width: 992px) {
@@ -141,6 +148,10 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     .header-container {
         padding-top: 164px;
     }
+
+    .col-7.col-md-6 {
+        margin-top: 5rem;
+    }   
 } 
 
 @media (min-width: 509px) and (max-width: 593px) {
@@ -150,8 +161,12 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 }
 
 @media (min-width: 426px) and (max-width: 991.5px) {
+    .col-7.col-md-6 {
+        margin-top: 14rem;
+    }
+    
     .col-md-6 {
-        margin-top: 14rem !important;
+        margin-top: 0rem;
     }
 
     .products-main {
@@ -190,4 +205,8 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
         left: -70px;
     }
+
+    .col-7.col-md-6 {
+        margin-top: 3.5rem;
+    }   
 }
