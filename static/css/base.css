@@ -10,14 +10,16 @@ body {
     font-family: 'Nunito', 'sans-serif';
 }
 
-/* -------------------------------- Main Font Color */
+/* -------------------------------- Main Text Color */
 
 ::placeholder,
-.main-color {
+.main-color,
+.lead,
+.products-home a {
     color: #003049 !important;
 }
 
-/* -------------------------------- Secondary Font Color */
+/* -------------------------------- Secondary Text Color */
 
 .btn-red,
 .delivery-text {
@@ -122,6 +124,46 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     box-shadow: 0px 3px 3px #000;
     color: #fff;
     margin-top: -0.5rem;
+}
+
+.category-btn {
+    color: #C1121F;
+    background-color: #fff;
+}
+
+.category-btn:hover,
+.category-btn:active,
+.category-btn:focus {
+    color: #fff;
+    background: #C1121F;
+    border-color: #C1121F;
+    text-decoration: none;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.category-badge {
+    color: #fff;
+    background: #C1121F;
+    padding: 0.3rem;
+    border: 3px solid #fff;
+    border-radius: 1rem;
+}
+
+.category-badge:hover,
+.category-badge:active,
+.category-badge:focus {
+    color: #fff;
+    background: #003049;
+    border-color: #003049;
+}
+
+.badge {
+    font-size: 100%;
+}
+
+.row.text-center.categories-link {
+    justify-content: center;
 }
 
 /* -------------------------------- Media Queries */
