@@ -117,7 +117,8 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     z-index: -1;
 }
 
-.products-main {
+.products-main,
+.basket-main {
     background: #003049;
     padding: 2.5rem;
     border: 2px solid #003049;
@@ -211,13 +212,15 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
         margin-top: 0rem;
     }
 
-    .products-main {
+    .products-main,
+    .basket-main {
         margin-top: 6.5rem;
     }
 }
 
 @media (min-width: 426px) and (max-width: 591px) {
-    .products-main {
+    .products-main,
+    .basket-main {
         margin-top: 8.5rem;
     }
 }
