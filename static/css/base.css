@@ -34,9 +34,12 @@ body {
 .btn-red:focus,
 .card:hover,
 .card:active,
-.card:focus {
-    background: #003049;
+.card:focus,
+.category-badge:hover,
+.category-badge:active,
+.category-badge:focus {
     color: #fff;
+    background: #003049;
     border-color: #003049;
 }
 
@@ -151,20 +154,53 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     border-radius: 1rem;
 }
 
-.category-badge:hover,
-.category-badge:active,
-.category-badge:focus {
-    color: #fff;
-    background: #003049;
-    border-color: #003049;
-}
-
 .badge {
     font-size: 100%;
 }
 
 .row.text-center.categories-link {
     justify-content: center;
+}
+
+/* -------------------------------- Shopping Basket */
+
+.continue-shopping {
+    color: #fff;
+    background: #C1121F;
+    border: 2px solid #C1121F;
+    border-radius: 30px;
+}
+
+.continue-shopping:hover,
+.continue-shopping:active,
+.continue-shopping:focus {
+    color: #C1121F;
+    background: #fff;
+    border: 2px solid #C1121F;
+    border-radius: 30px;
+}
+
+.basket-form {
+    width: 80% !important;
+}
+
+.add-basket {
+    color: #fff;
+    background: #003049;
+    border: 2px solid #003049;
+    border-radius: 30px;
+}
+
+.add-basket:hover,
+.add-basket:active,
+.add-basket:focus {
+    color: #003049;
+    background: #fff;
+    border: 2px solid #003049;
+}
+
+.icon-white {
+    color: #fff;
 }
 
 /* -------------------------------- Media Queries */
