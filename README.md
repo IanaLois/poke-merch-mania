@@ -14,6 +14,7 @@
   - [**Table of Contents**](#table-of-contents)
       - [**User Stories:**](#user-stories)
       - [**Wireframes:**](#wireframes)
+      - [**Database:**](#database)
         - [**Home Page:**](#home-page)
         - [**Products Page:**](#products-page)
         - [**Product Details Page:**](#product-details-page)
@@ -33,6 +34,17 @@
 
 <div style="text-align:center">
 <img src="media/homepage-wireframe.png" alt="Home Page Wireframe" width="75%" height="75%">
+</div>
+
+<br>
+
+#### **Database:**
+/workspaces/pokemon-merch-mania/media/pokemerchmania-drawSQL.png
+
+<br>
+
+<div style="text-align:center">
+<img src="media/pokemerchmania-drawSQL.png" alt="Database Diagram" width="75%" height="75%">
 </div>
 
 <br>
