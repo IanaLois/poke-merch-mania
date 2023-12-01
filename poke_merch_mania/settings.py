@@ -25,7 +25,10 @@ SECRET_KEY = 'djt2x^(l89t#oo8phzvka$$&16nrwpa8lv)4dns(**i@^1f9c@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ianalois-pokemon-merch-m-3lmwv6cf65.us2.codeanyapp.com']
+ALLOWED_HOSTS = [
+    '8000-ianalois-pokemon-merch-m-3lmwv6cf65.us2.codeanyapp.com',
+    '8080-ianalois-pokemon-merch-m-3lmwv6cf65.us2.codeanyapp.com',
+]
 
 
 # Application definition

@@ -78,6 +78,10 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     left: -26px;
 }
 
+.basket-icon {
+    color: #003049;
+}
+
 /* -------------------------------- Main Banner Message */
 
 .banner-text {
@@ -201,6 +205,27 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 
 .icon-white {
     color: #fff;
+}
+
+.main-red {
+    color: #C1121F;
+}
+
+.basket-card {
+    box-shadow: 0px 5px 3px #003049;
+}
+
+.basket-card:hover {
+    box-shadow: 0px 5px 0px #003049;
+    border: 2px solid #003049;
+}
+
+.shop-font {
+    font-size: 1.3rem;
+}
+
+.shop-small-font {
+    font-size: 1.1em;
 }
 
 /* -------------------------------- Media Queries */
