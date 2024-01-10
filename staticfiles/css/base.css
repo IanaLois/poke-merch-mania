@@ -1,0 +1,318 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/pokemon-xmas-banner.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #003049;
+    font-family: 'Nunito', 'sans-serif';
+}
+
+/* -------------------------------- Main Text Color */
+
+::placeholder,
+.main-color,
+.lead,
+.products-home a {
+    color: #003049 !important;
+}
+
+/* -------------------------------- Secondary Text Color */
+
+.btn-red,
+.delivery-text {
+    background: #C1121F;
+    color: #fff;
+}
+
+/* -------------------------------- Main Hover Effect */
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus,
+.card:hover,
+.card:active,
+.card:focus,
+.category-badge:hover,
+.category-badge:active,
+.category-badge:focus {
+    color: #fff;
+    background: #003049;
+    border-color: #003049;
+}
+
+/* -------------------------------- Main Logo */
+
+.logo-font {
+    border-bottom: 4px solid #C1121F;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+/* -------------------------------- Searchbar */
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.border-color {
+    border: 2px solid #C1121F;
+    border-radius: 15px;
+}
+
+/* -------------------------------- Account Dropdown Menu */
+
+.dropdown-menu {
+    min-width: 1rem !important;
+}
+
+li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
+    left: -26px;
+}
+
+.basket-icon {
+    color: #003049;
+}
+
+/* -------------------------------- Main Banner Message */
+
+.banner-text {
+    background: #003049;
+    padding: 1rem;
+    border: 2px solid #003049;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #000;
+    color: #fff;
+}
+
+/* -------------------------------- Main Shop Now Button */
+
+.shop-now-button {
+    color: #003049;
+    background: #fff;
+    min-width: 260px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    color: #fff;
+    background: #C1121F;
+    border-color: #C1121F;
+}
+
+/* -------------------------------- Products Page */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.products-main,
+.basket-main {
+    background: #003049;
+    padding: 2.5rem;
+    border: 2px solid #003049;
+    box-shadow: 0px 3px 3px #000;
+    color: #fff;
+    margin-top: -0.5rem;
+}
+
+.category-btn {
+    color: #C1121F;
+    background-color: #fff;
+}
+
+.category-btn:hover,
+.category-btn:active,
+.category-btn:focus {
+    color: #fff;
+    background: #C1121F;
+    border-color: #C1121F;
+    text-decoration: none;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.category-badge {
+    color: #fff;
+    background: #C1121F;
+    padding: 0.3rem;
+    border: 3px solid #fff;
+    border-radius: 1rem;
+}
+
+.badge {
+    font-size: 100%;
+}
+
+.row.text-center.categories-link {
+    justify-content: center;
+}
+
+/* -------------------------------- Shopping Basket */
+
+.continue-shopping {
+    color: #fff;
+    background: #C1121F;
+    border: 2px solid #C1121F;
+    border-radius: 30px;
+}
+
+.continue-shopping:hover,
+.continue-shopping:active,
+.continue-shopping:focus {
+    color: #C1121F;
+    background: #fff;
+    border: 2px solid #C1121F;
+    border-radius: 30px;
+}
+
+.basket-form {
+    width: 80% !important;
+}
+
+.add-basket {
+    color: #fff;
+    background: #003049;
+    border: 2px solid #003049;
+    border-radius: 30px;
+}
+
+.add-basket:hover,
+.add-basket:active,
+.add-basket:focus {
+    color: #003049;
+    background: #fff;
+    border: 2px solid #003049;
+}
+
+.icon-white {
+    color: #fff;
+}
+
+.main-red {
+    color: #C1121F;
+}
+
+.basket-card {
+    box-shadow: 0px 5px 3px #003049;
+}
+
+.basket-card:hover {
+    box-shadow: 0px 5px 0px #003049;
+    border: 2px solid #003049;
+}
+
+.shop-font {
+    font-size: 1.3rem;
+}
+
+.shop-small-font {
+    font-size: 1.1em;
+}
+
+/* -------------------------------- Media Queries */
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 80%;
+    }
+    
+    .col-7.col-md-6 {
+        margin-top: 5rem;
+    }   
+}
+
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+
+    .col-7.col-md-6 {
+        margin-top: 5rem;
+    }   
+} 
+
+@media (min-width: 509px) and (max-width: 593px) {
+    li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
+        left: -109px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 991.5px) {
+    .col-7.col-md-6 {
+        margin-top: 14rem;
+    }
+    
+    .col-md-6 {
+        margin-top: 0rem;
+    }
+
+    .products-main,
+    .basket-main {
+        margin-top: 6.5rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 591px) {
+    .products-main,
+    .basket-main {
+        margin-top: 8.5rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+    .banner-text {
+        font-size: 1.5rem;
+    }
+
+    .fixed-top {
+        position: static;
+    }
+
+    .shop-now-button {
+        font-size: 1rem;
+        min-width: 125px;
+    }
+
+    .navbar {
+        padding: 0.5rem 1.3rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0.5rem;
+    }
+
+    li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
+        left: -70px;
+    }
+
+    .col-7.col-md-6 {
+        margin-top: 3.5rem;
+    }   
+}
