@@ -24,11 +24,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'djt2x^(l89t#oo8phzvka$$&16nrwpa8lv)4dns(**i@^1f9c@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-ianalois-pokemon-merch-m-3lmwv6cf65.us2.codeanyapp.com',
     '8080-ianalois-pokemon-merch-m-3lmwv6cf65.us2.codeanyapp.com',
+    '8000-ianalois-poke-merch-mani-ky3zzq15sc.us2.codeanyapp.com',
 ]
 
 
@@ -58,6 +59,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'poke_merch_mania.urls'
@@ -160,3 +163,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
