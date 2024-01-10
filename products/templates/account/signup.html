@@ -1,0 +1,83 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container mw-100">
+  <div class="row">
+    <div class="col-md-12 p-0 signup-background-container">
+      <div class="col-md-6 p-4 signup_form">
+        <h1 class="text-center"><u>Sign-up</u></h1>
+        <form method="post" action="{% url 'account_signup' %}">
+          <p>
+            <label for="id_username">Username</label>
+            <br />
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              autocomplete="username"
+              minlength="1"
+              maxlength="150"
+              id="id_username"
+              required
+            />
+          </p>
+          <p>
+            <label for="id_email">Email</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              autocomplete="email"
+              id="id_email"
+            />
+          </p>
+          <p>
+            <label for="id_password1">Password</label>
+            <br />
+            <input
+              type="password"
+              name="password1"
+              placeholder="Password"
+              autocomplete="new-password"
+              required
+              id="id_password1"
+            />
+          </p>
+          <span class="helptext">
+            <ul>
+              <li>
+                Your password can’t be too similar to your other personal
+                information.
+              </li>
+              <li>Your password must contain at least 8 characters.</li>
+              <li>Your password can’t be a commonly used password.</li>
+              <li>Your password can’t be entirely numeric.</li>
+            </ul>
+          </span>
+          <p>
+            <label for="id_password2">Password (again)</label>
+            <br />
+            <input
+              type="password"
+              name="password2"
+              placeholder="Password (again)"
+              autocomplete="new-password"
+              required
+              id="id_password2"
+            />
+          </p>
+          <p>
+            Already have an account? Login
+            <a href="{% url 'account_login' %}" class="sign_up_here"
+              ><u>here.</u></a
+            >
+          </p>
+          <button type="submit" class="btn login_btn text-uppercase">
+            Sign-up
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
