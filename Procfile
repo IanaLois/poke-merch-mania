@@ -1,0 +1,1 @@
+web: gunicorn poke_merch_mania.wsgi:application
