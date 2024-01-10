@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
     '8000-ianalois-pokemon-merch-m-3lmwv6cf65.us2.codeanyapp.com',
     '8080-ianalois-pokemon-merch-m-3lmwv6cf65.us2.codeanyapp.com',
     '8000-ianalois-poke-merch-mani-ky3zzq15sc.us2.codeanyapp.com',
+    'poke-merch-mania-d204c1fd322b.herokuapp.com',
 ]
 
 
