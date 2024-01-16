@@ -23,13 +23,13 @@
       <div class="d-block d-md-none">
         {% for item in bag_items %}
         <div class="row">
-          <div class="col-12 col-sm-6 mb-2">
+          <div class="col-12 col-sm-6 mb-3 mt-3">
             {% include "bag/product-image.html" %}
           </div>
-          <div class="col-12 col-sm-6 mb-2">
+          <div class="col-12 col-sm-6 mb-3 mt-3">
             {% include "bag/product-info.html" %}
           </div>
-          <div class="col-12 col-sm-6 order-sm-last">
+          <div class="col-12 col-sm-6 order-sm-last mb-3 mt-3">
             <p class="my-0 shop-small-font mt-3">
               Price Each: €{{ item.product.price }}
             </p>
@@ -38,7 +38,7 @@
               calc_subtotal:item.quantity }}
             </p>
           </div>
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-sm-6 mb-3 mt-3">
             {% include "bag/quantity-form.html" %}
           </div>
         </div>
@@ -78,7 +78,9 @@
             <td class="py-3 shop-font main-color">
               <p class="my-0 mt-3">€{{ item.product.price }}</p>
             </td>
-            <td class="py-3 w-25">{% include "bag/quantity-form.html" %}</td>
+            <td class="py-3 shop-font main-color">
+              {% include "bag/quantity-form.html" %}
+            </td>
             <td class="py-3 shop-font main-color">
               <p class="my-0 mt-3">
                 €{{ item.product.price | calc_subtotal:item.quantity }}
@@ -118,27 +120,37 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<!-- prettier-ignore -->
 <script type="text/javascript">
-    // Update quantity on click
-    $('.update-link').click(function (e) {
-        var form = $(this).prev('.update-form');
-        form.submit();
-    });
+  // Update quantity on click
+  $(".update-link").click(function (e) {
+    e.preventDefault();
 
-    // Remove item and reload on click
-    $('.remove-item').click(function (e) {
-        var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('product_size');
-        var url = '/bag/remove/' + itemId + '/';
-        var data = { 'csrfmiddlewaretoken': csrfToken, 'product_size': size };
+    var form = $(this).prev(".update-form");
+    form.submit();
+  });
 
-        $.post(url, data)
-            .done(function () {
-                location.reload();
-            });
+  // Remove item and reload on click
+  $(".remove-item").click(function (e) {
+    e.preventDefault();
+
+    var csrfToken = "{{ csrf_token }}";
+    var itemId = $(this).attr("id").split("remove_")[1];
+    var size = $(this).data("product_size");
+    var url = "/bag/remove/" + itemId + "/";
+    var data = { csrfmiddlewaretoken: csrfToken, product_size: size };
+
+    $.post(url, data).done(function () {
+      location.reload();
     });
+  });
+
+  // Increment and Decrement quantity on click
+  $(".increment-qty, .decrement-qty").click(function (e) {
+    e.preventDefault();
+
+    var button = $(this);
+    var form = button.closest("form");
+    form.submit();
+  });
 </script>
 {% endblock %}
-<!-- prettier-ignore -->
