@@ -228,6 +228,10 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     font-size: 1.1em;
 }
 
+.size_width {
+    width: 44.5% !important;
+}
+
 /* ------------------------------------------------------------ Media Queries */
 
 @media (min-width: 1024px) {
