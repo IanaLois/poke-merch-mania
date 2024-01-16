@@ -10,7 +10,7 @@ body {
     font-family: 'Nunito', 'sans-serif';
 }
 
-/* -------------------------------- Main Text Color */
+/* ---------------------------------------------------------- Main Text Color */
 
 ::placeholder,
 .main-color,
@@ -19,7 +19,7 @@ body {
     color: #003049 !important;
 }
 
-/* -------------------------------- Secondary Text Color */
+/* ----------------------------------------------------- Secondary Text Color */
 
 .btn-red,
 .delivery-text {
@@ -27,7 +27,7 @@ body {
     color: #fff;
 }
 
-/* -------------------------------- Main Hover Effect */
+/* -------------------------------------------------------- Main Hover Effect */
 
 .btn-red:hover,
 .btn-red:active,
@@ -43,7 +43,7 @@ body {
     border-color: #003049;
 }
 
-/* -------------------------------- Main Logo */
+/* ---------------------------------------------------------------- Main Logo */
 
 .logo-font {
     border-bottom: 4px solid #C1121F;
@@ -53,7 +53,7 @@ body {
     width: fit-content;
 }
 
-/* -------------------------------- Searchbar */
+/* ---------------------------------------------------------------- Searchbar */
 
 .icon {
     align-items: center;
@@ -68,7 +68,7 @@ body {
     border-radius: 15px;
 }
 
-/* -------------------------------- Account Dropdown Menu */
+/* ---------------------------------------------------- Account Dropdown Menu */
 
 .dropdown-menu {
     min-width: 1rem !important;
@@ -82,7 +82,7 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     color: #003049;
 }
 
-/* -------------------------------- Main Banner Message */
+/* ------------------------------------------------------ Main Banner Message */
 
 .banner-text {
     background: #003049;
@@ -93,7 +93,7 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     color: #fff;
 }
 
-/* -------------------------------- Main Shop Now Button */
+/* ----------------------------------------------------- Main Shop Now Button */
 
 .shop-now-button {
     color: #003049;
@@ -112,7 +112,7 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     border-color: #C1121F;
 }
 
-/* -------------------------------- Products Page */
+/* ------------------------------------------------------------ Products Page */
 
 .overlay {
     height: 100%;
@@ -166,7 +166,7 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     justify-content: center;
 }
 
-/* -------------------------------- Shopping Basket */
+/* ---------------------------------------------------------- Shopping Basket */
 
 .continue-shopping {
     color: #fff;
@@ -228,16 +228,16 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     font-size: 1.1em;
 }
 
-/* -------------------------------- Media Queries */
+/* ------------------------------------------------------------ Media Queries */
 
 @media (min-width: 1024px) {
     .container {
         max-width: 80%;
     }
-    
+
     .col-7.col-md-6 {
         margin-top: 5rem;
-    }   
+    }
 }
 
 @media (min-width: 992px) {
@@ -255,8 +255,8 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 
     .col-7.col-md-6 {
         margin-top: 5rem;
-    }   
-} 
+    }
+}
 
 @media (min-width: 509px) and (max-width: 593px) {
     li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
@@ -268,7 +268,7 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
     .col-7.col-md-6 {
         margin-top: 14rem;
     }
-    
+
     .col-md-6 {
         margin-top: 0rem;
     }
@@ -280,6 +280,7 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 }
 
 @media (min-width: 426px) and (max-width: 591px) {
+
     .products-main,
     .basket-main {
         margin-top: 8.5rem;
@@ -314,5 +315,11 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 
     .col-7.col-md-6 {
         margin-top: 3.5rem;
-    }   
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #product-container {
+        margin-top: 7rem;
+    }
 }
