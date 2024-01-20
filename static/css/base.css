@@ -17,7 +17,7 @@ body {
 .main-color,
 .lead,
 .products-home a {
-  color: #003049 !important;
+  color: #003049;
 }
 
 /* ----------------------------------------------------- Secondary Text Color */
@@ -72,7 +72,7 @@ body {
 /* ---------------------------------------------------- Account Dropdown Menu */
 
 .dropdown-menu {
-  min-width: 1rem !important;
+  min-width: 1rem;
 }
 
 li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
@@ -186,7 +186,7 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 }
 
 .basket-form {
-  width: 80% !important;
+  width: 80%;
 }
 
 .add-basket {
@@ -231,7 +231,7 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 }
 
 .size_width {
-  width: 44.5% !important;
+  width: 44.5%;
 }
 
 .table th {
@@ -310,35 +310,35 @@ li.list-inline-item.dropdown .dropdown-menu[aria-labelledby="user-options"] {
 /* ------------------------ Convenience Classes, Colors copied from Bootstrap */
 
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+    border-bottom-color: #007bff;
 }
 
 .arrow-secondary {
-    border-bottom-color: #6c757d !important;
+    border-bottom-color: #6c757d;
 }
 
 .arrow-success {
-    border-bottom-color: #28a745 !important;
+    border-bottom-color: #28a745;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+    border-bottom-color: #dc3545;
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+    border-bottom-color: #ffc107;
 }
 
 .arrow-info {
-    border-bottom-color: #17a2b8 !important;
+    border-bottom-color: #17a2b8;
 }
 
 .arrow-light {
-    border-bottom-color: #f8f9fa !important;
+    border-bottom-color: #f8f9fa;
 }
 
 .arrow-dark {
-    border-bottom-color: #343a40 !important;
+    border-bottom-color: #343a40;
 }
 
 /* ------------------------------------------------------------ Media Queries */
