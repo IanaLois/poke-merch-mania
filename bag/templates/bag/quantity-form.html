@@ -6,18 +6,6 @@
   {% csrf_token %}
   <div class="form-group">
     <div class="input-group input-group-{{ item.item_id }}">
-      <div class="input-group-prepend">
-        <button
-          class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }} 
-                    {% if item.size %}decrement-size_{{ item.item_id }}_{{ item.size }}{% endif %}"
-          data-item_id="{{ item.item_id }}"
-          data-size="{{ item.size }}"
-        >
-          <span>
-            <i class="fas fa-minus fa-sm"></i>
-          </span>
-        </button>
-      </div>
       <input
         class="form-control form-control-sm qty_input id_qty_{{ item.item_id }} 
                 {% if item.size %}size_{{ item.item_id }}_{{ item.size }}{% endif %}"
@@ -29,18 +17,6 @@
         data-item_id="{{ item.item_id }}"
         data-size="{{ item.size }}"
       />
-      <div class="input-group-append">
-        <button
-          class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ item.item_id }} 
-                    {% if item.size %}increment-size_{{ item.item_id }}_{{ item.size }}{% endif %}"
-          data-item_id="{{ item.item_id }}"
-          data-size="{{ item.size }}"
-        >
-          <span>
-            <i class="fas fa-plus fa-sm"></i>
-          </span>
-        </button>
-      </div>
       {% if item.product.has_sizes %}
       <input type="hidden" name="product_size" value="{{ item.size }}" />
       {% endif %}

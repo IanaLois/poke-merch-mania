@@ -93,6 +93,8 @@ ACCOUNT_LOGIN_TEMPLATE = 'account/login.html'
 ACCOUNT_SIGNUP_TEMPLATE = 'account/signup.html'
 ACCOUNT_PASSWORD_RESET_TEMPLATE = 'account/password_reset.html'
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',

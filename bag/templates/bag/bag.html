@@ -1,15 +1,12 @@
 {% extends "base.html" %} {% load static %} {% load bag_tools %}
-<!-- prettier-ignore -->
 
 {% block page_header %}
-<!-- prettier-ignore -->
 <div class="container header-container">
   <div class="row">
     <div class="col"></div>
   </div>
 </div>
 {% endblock %}
-<!-- prettier-ignore -->
 
 {% block content %}
 <div class="overlay"></div>
@@ -34,8 +31,8 @@
               Price Each: €{{ item.product.price }}
             </p>
             <p class="shop-small-font mt-3">
-              <strong>Subtotal: </strong>€{{ item.product.price |
-              calc_subtotal:item.quantity }}
+              <strong>Subtotal: </strong>
+              €{{ item.product.price | calc_subtotal:item.quantity }}
             </p>
           </div>
           <div class="col-12 col-sm-6 mb-3 mt-3">
@@ -116,7 +113,6 @@
   </div>
 </div>
 {% endblock %}
-<!-- prettier-ignore -->
 
 {% block postloadjs %}
 {{ block.super }}

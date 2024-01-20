@@ -26,7 +26,7 @@
         />
         <div class="input-group-append">
           <button
-            class="form-control form-control btn btn-black border border-black rounded-0"
+            class="form-control form-control btn border border-black rounded-0 main-color"
             type="submit"
           >
             <span class="icon">
@@ -54,9 +54,7 @@
   </a>
   <div class="dropdown-menu border-0" aria-labelledby="user-options">
     {% if request.user.is_authenticated %}
-    <!-- prettier-ignore -->
     {% if request.user.is_superuser %}
-    <!-- prettier-ignore -->
     <a href="" class="dropdown-item main-color">Manage Products</a>
     {% endif %}
     <a href="" class="dropdown-item main-color">My Profile</a>
@@ -81,15 +79,12 @@
     <div class="text-center">
       <div><i class="fas fa-shopping-bag fa-lg basket-icon"></i></div>
       <p class="my-0">
-        <!-- prettier-ignore -->
         {% if grand_total %}
                     €{{ grand_total|floatformat:2 }}
                 {% else %}
                     €0.00
         {% endif %}
-        <!-- prettier-ignore -->
       </p>
     </div>
   </a>
 </li>
-<!-- prettier-ignore -->
