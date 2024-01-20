@@ -2,7 +2,7 @@
   <div class="arrow-up arrow-success"></div>
   <div class="w-100 toast-capper bg-success"></div>
   <div class="toast-header bg-white main-color">
-    <strong class="mr-auto">Added Successfully!</strong>
+    <strong class="mr-auto">Successful!</strong>
     <button
       type="button"
       class="ml-2 mb-1 close main-color"
@@ -41,7 +41,7 @@
         </div>
         <div class="col-9">
           <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-          <p class="my-0 small">
+          <p class="my-0 small text-muted">
             Size: 
             {% if item.product.has_sizes %} 
             {{ item.size|upper }} 
@@ -70,7 +70,7 @@
         {% endif %}
         <a
           href="{% url 'view_bag' %}"
-          class="btn btn-block rounded-0 main-color"
+          class="btn btn-block rounded-0 add-basket"
         >
           <span class="text-uppercase">Go To Secure Checkout</span>
           <span class="icon">

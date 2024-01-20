@@ -27,10 +27,10 @@
             {% include "bag/product-info.html" %}
           </div>
           <div class="col-12 col-sm-6 order-sm-last mb-3 mt-3">
-            <p class="my-0 shop-small-font mt-3">
+            <p class="my-0 shop-small-font mt-3 main-red">
               Price Each: €{{ item.product.price }}
             </p>
-            <p class="shop-small-font mt-3">
+            <p class="shop-small-font mt-3 text-uppercase">
               <strong>Subtotal: </strong>
               €{{ item.product.price | calc_subtotal:item.quantity }}
             </p>
@@ -75,7 +75,7 @@
             <td class="py-3 shop-font main-color">
               <p class="my-0 mt-3">€{{ item.product.price }}</p>
             </td>
-            <td class="py-3 shop-font main-color">
+            <td class="shop-font main-color qty-table">
               {% include "bag/quantity-form.html" %}
             </td>
             <td class="py-3 shop-font main-color">

@@ -1,10 +1,10 @@
 <form
-  class="form update-form"
+  class="form update-form qty-form"
   method="POST"
   action="{% url 'adjust_bag' item.item_id %}"
 >
   {% csrf_token %}
-  <div class="form-group">
+  <div class="form-group small-qty-table">
     <div class="input-group input-group-{{ item.item_id }}">
       <input
         class="form-control form-control-sm qty_input id_qty_{{ item.item_id }} 
