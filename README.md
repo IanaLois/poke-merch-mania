@@ -316,7 +316,6 @@ PokeMerchMania was created using [Codeanywhere](https://codeanywhere.com/) and p
 
   `DATABASE_URL` - `copied database URL from ElephantSQL` <br>
   `DISABLE_COLLECTSTATIC` - `1` <br>
-  `HEROKU_POSTGRESQL_WHITE_URL` - `heroku add on` <br>
   `SECRET_KEY` - `copied secret key` <br>
 
 **Connecting to GitHub and Deploy**
